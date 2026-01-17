@@ -11,8 +11,6 @@ import (
 	"github.com/tasukuwatanabe/fcc-go-projects/go-bookstore/pkg/utils"
 )
 
-var NewBook models.Book
-
 func GetBooks(w http.ResponseWriter, r *http.Request) {
 	newBooks := models.GetAllBooks()
 	res, _ := json.Marshal(newBooks)

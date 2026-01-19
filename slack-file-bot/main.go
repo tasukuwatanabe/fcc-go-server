@@ -29,8 +29,8 @@ func main() {
 	}
 
 	params := slack.UploadFileV2Parameters{
-		Channel: channelID,
-		File: filename,
+		Channel:  channelID,
+		File:     filename,
 		Filename: filename,
 		FileSize: int(fileInfo.Size()),
 	}
